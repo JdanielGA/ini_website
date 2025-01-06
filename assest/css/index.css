@@ -8,146 +8,89 @@ html {
     font-size: 62.5%;
 }
 
-.layout {
-    height: 100vh;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
-    background-color: aquamarine;
+    background-image: url(../images/index/pawel_czerwinski-purple_pattern-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.body {
+    height: 200vh;
+    width: 80%;
+    max-width: 1920px;
 }
 
 .header {
-    height: 7.7rem;
-    background-color: blue;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.header-logo {
-    display: inline-block;
+.header-logo  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 20rem;
-    padding: 0.5rem 0;
-    text-align: center;
-    overflow: hidden;
+    font-size: 64px;
+    color: white;
 }
 
-.logo {
-    display: inline-block;
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    align-items: center;
     height: 100%;
-    width: 100%;
-    padding: 2.1rem 0;
-    font-size: 2.5rem;
 }
 
-.header-navbar {
-    display: inline-block;
-    padding: 0.5rem 0;
-    height: 100%;
-    width: calc(100% - 20.3rem);
-    overflow: hidden;
-}
-.header-navbar_navitems {
-    height: 100%;
-    width: 100%;
-}
-
-.header-navbar_navitems_list {
+.header-nav_list {
     list-style: none;
-    text-align: right;
+    display: flex;
     height: 100%;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+    font-family: sans-serif;
 }
 
-.header-navbar_navitems_list li {
-    display: inline-block;
-    font-size: 2rem;
-    margin-right: 1.5rem;
-    line-height: 6.5rem;
-}
-
-.header-navbar_navitems_list li a {
+.header-nav_list a {
     text-decoration: none;
     color: white;
 }
 
-.main {
-    height: calc(100% - 12.7rem);
-    background-color: violet;
-}
-
-.main-sidebar {
-    display: inline-block;
-    padding: 1.5rem 1.5rem;
-    height: 100%;
-    width: 20rem;
-    background-color: rgb(136, 63, 136);
-    overflow: hidden;
-}
-
-.main-sidebar_list {
-    list-style: none;
-    text-align: center;
-    height: 100%;
+.content-frontpage {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: calc(100vh - 10rem);
     width: 100%;
 }
 
-.main-sidebar_list li {
-    margin: 75% 0;
-    font-size: 2rem;
-}
-
-.main-sidebar_list li a {
-    text-decoration: none;
-    color: white;
-}
-
-.main-content {
-    display: inline-block;
+.content-frontpage_tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    width: calc(100% - 20.3rem);
+    width: 66.66%;
+    background-color: rgba(137, 43, 226, 0);
 }
 
-.footer {
-    height: 5rem;
-    background-color: rgb(21, 110, 43);
-    overflow: hidden;
-}
-
-.social-media {
-    display: inline-block;
+.content-frontpage_slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    width: 20rem;
-    padding: 1rem 0.5rem;
-}
-
-.social-media_icon {
-    display: inline-block;
-    height: 100%;
-    width: 3rem;
-}
-
-.icon_facebook {
-    height: 100%;
-    width: 100%;
-    background-color: blue;
-}
-
-.icon_instagram {
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(45deg, #FCAF45, #F56040, #C13584, #833AB4);
-    margin-inline: 5rem;
-
-}
-
-.icon_x {
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    margin-left: 9.5rem;
-}
-
-.footer-content {
-    display: inline-block;
-    height: 100%;
-    width: calc(100% - 20.3rem);
-    padding: 1rem 0.5rem;
-    text-align: right;
-    font-size: 2rem;
+    width: 33.33%;
+    background-color: rgba(51, 18, 82, 0);
 }
